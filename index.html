@@ -6,6 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mondrian Project</title>
   <style>
+    body{
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: black;
+      grid-template-columns:320px 198px 153px 50px;
+      grid-template-rows:414px 130px 155px 20px;
+      gap:9px
+      
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .offwhite1{
+      background-color: #f0f1ec;
+      grid-column: span 3;
+    }
+    .offwhite2{
+      background-color:#f0f1ec ;
+      grid-row: span 2;
+    }
+    .offwhite3{
+      background-color: #f0f1ec;
+      grid-area: 2/2/4/4;
+    }
+    .blue{
+      background-color: blue;
+      border-bottom: 1px solid black;
+    }
+    .offwhite4{
+      background-color:beige ;
+      grid-row: span 2;
+    }
+    .offwhite5{
+      background-color: beige;
+    }
+    .yellow{
+      background-color: yellow;
+    }
+    .black{
+      background-color: #232629;
+    }
+   
+    
+
+
     /* 
     Write your CSS here 
     Gap Colour: #000
@@ -23,7 +77,19 @@
 </head>
 
 <body>
-  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="offwhite1"></div>
+    <div class="offwhite2"></div>
+    <div class="offwhite3"></div>
+    
+    <div class="blue"></div>
+    <div class="offwhite4"></div>
+    
+    <div class="offwhite5"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+  </div>
 </body>
 
 </html>
